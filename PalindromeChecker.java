@@ -3,23 +3,22 @@ public class PalindromeChecker {
 
     public static void main(String[] args) {
 
-        // Hardcoded string
-        String word = "madam";
+        // Original string
+        String original = "level";
 
-        // Reverse the string
+        // Variable to store reversed string
         String reversed = "";
 
-        for (int i = word.length() - 1; i >= 0; i--) {
-            reversed = reversed + word.charAt(i);
+        // Reverse the string using for loop
+        for (int i = original.length() - 1; i >= 0; i--) {
+            reversed = reversed + original.charAt(i);
         }
 
-        // Check palindrome condition
-        if (word.equals(reversed)) {
-            System.out.println("The word \"" + word + "\" is a Palindrome.");
+        // Compare original and reversed string
+        if (original.equals(reversed)) {
+            System.out.println("The string \"" + original + "\" is a Palindrome.");
         } else {
-            System.out.println("The word \"" + word + "\" is NOT a Palindrome.");
+            System.out.println("The string \"" + original + "\" is NOT a Palindrome.");
         }
-
-        System.out.println("Program executed successfully.");
     }
 }
