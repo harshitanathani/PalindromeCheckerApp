@@ -1,4 +1,4 @@
-public class UseCase9PalindromeCheckerApp {
+public class PalindromeChecker {
 
     // Recursive function to check palindrome
     public static boolean isPalindrome(String str, int start, int end) {
